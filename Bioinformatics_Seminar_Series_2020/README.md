@@ -11,7 +11,7 @@
    * [watch Zoom video recording](https://www.youtube.com/watch?v=V-xCO8RRXGw&t=113s)
 * April 27th, 2020: "Biodatabases" by Juan Felipe Beltrán, PhD
    * see slides
-   * watch Zoom video recording
+   * [watch Zoom video recording](https://www.youtube.com/watch?v=8Ki2qs_sTYU&t=20)
 
 #### Coming up:
 * May 18th, 2020: "Introduction to ATAC-seq and ChIP-seq" by Emily Brown, PhD
