@@ -9,7 +9,9 @@
 * April 6th, 2020: "Introduction to Machine Learning" by Juan Felipe Beltrán, PhD
    * [see slides](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Seminar_Series_2020/CVRC_Bioinformatics_Lecture_2_Intro-to-Machine-Learning.pdf)
    * [watch Zoom video recording](https://www.youtube.com/watch?v=V-xCO8RRXGw&t=113s)
+* April 27th, 2020: "Biodatabases" by Juan Felipe Beltrán, PhD
+   * see slides
+   * watch Zoom video recording
 
 #### Coming up:
-* April 27th, 2020: "Biodatabases" by Juan Felipe Beltrán, PhD
 * May 18th, 2020: "Introduction to ATAC-seq and ChIP-seq" by Emily Brown, PhD
