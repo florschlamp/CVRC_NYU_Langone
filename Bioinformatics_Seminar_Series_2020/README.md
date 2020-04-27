@@ -10,7 +10,7 @@
    * [see slides](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Seminar_Series_2020/CVRC_Bioinformatics_Lecture_2_Intro-to-Machine-Learning.pdf)
    * [watch Zoom video recording](https://www.youtube.com/watch?v=V-xCO8RRXGw&t=113s)
 * April 27th, 2020: "Biodatabases" by Juan Felipe Beltrán, PhD
-   * see slides
+   * [see slides](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Seminar_Series_2020/CVRC_Bioinformatics_Lecture_3_Biodatabases.pdf)
    * [watch Zoom video recording](https://www.youtube.com/watch?v=8Ki2qs_sTYU&t=20)
 
 #### Coming up:
