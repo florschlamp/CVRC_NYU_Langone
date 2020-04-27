@@ -12,3 +12,4 @@
 
 #### Coming up:
 * April 27th, 2020: "Biodatabases" by Juan Felipe Beltrán, PhD
+* May 18th, 2020: "Introduction to ATAC-seq and ChIP-seq" by Emily Brown, PhD
