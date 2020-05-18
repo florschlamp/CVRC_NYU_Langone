@@ -14,7 +14,7 @@
    * [watch Zoom video recording](https://www.youtube.com/watch?v=8Ki2qs_sTYU&t=20)
 * May 18th, 2020: "Introduction to ATAC-seq and ChIP-seq" by Emily Brown, PhD
    * [see slides](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Seminar_Series_2020/CVRC_Bioinformatics_Lecture_4_Intro-to-ChIPseq-%26-ATACseq.pdf)
-   * [watch Zoom video recording]() (PROCESSING)
+   * [watch Zoom video recording](https://www.youtube.com/watch?v=LtZXZM1lfaY)
 
 #### Coming up:
 * TBD
