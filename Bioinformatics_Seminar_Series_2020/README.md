@@ -17,6 +17,6 @@
    * [watch Zoom video recording](https://www.youtube.com/watch?v=LtZXZM1lfaY)
 
 #### Coming up:
-* TBD
+* Basic Programming and Bioinformatics Analyses using R in Rstudio, Fall 2020
 
 
