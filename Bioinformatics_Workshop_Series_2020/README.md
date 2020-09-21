@@ -1,6 +1,8 @@
 # CVRC Bioinformatics Workshop Series 2020
 
-## Schedule
+## Basic Programming and Bioinformatics Analyses using R in Rstudio
+
+### Schedule
 
 
 #### Coming up:
