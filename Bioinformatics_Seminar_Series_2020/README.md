@@ -18,5 +18,6 @@
 
 #### Coming up:
 * Basic Programming and Bioinformatics Analyses using R in Rstudio, Fall 2020
+  * [Go to Workshop folder](https://github.com/florschlamp/CVRC_NYU_Langone/tree/master/Bioinformatics_Workshop_Series_2020)
 
 
