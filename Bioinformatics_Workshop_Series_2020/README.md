@@ -15,8 +15,6 @@
 
 
 #### Coming up:
-* Friday September 25th  
-Day 1: “Introduction: First Steps on using R in Rstudio”
 
 * Friday October 9th  
 Day 2: “Data Exploration, Part 1: Basic RNA-seq Data Manipulation”
@@ -36,6 +34,12 @@ Day 6: “Data Analysis, Part 3: Downstream Analyses”
 * Friday December 18th  
 Day 7: “Troubleshooting and Miscellaneous”
 
+#### Past workshops:
+
+* Friday September 25th  
+Day 1: “Introduction: First Steps on using R in Rstudio”
+  * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_1/Materials_for_Day1.md)
+  * [Watch Zoom video recording](https://www.youtube.com/watch?v=p7FM7NvMqfE)
 
 ##  
 <br> 
