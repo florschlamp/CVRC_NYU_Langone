@@ -12,3 +12,6 @@ Files you should have now:
 New files added after the end of the workshop:
 - Day1_code_post-session.R
 - mammals_updated.csv
+
+To watch the recording of the workshop:
+https://www.youtube.com/watch?v=p7FM7NvMqfE
