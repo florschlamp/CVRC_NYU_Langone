@@ -1,6 +1,17 @@
 # Day 1 - Introduction: First Steps on using R in Rstudio
 ## Friday, September 25th, 2020
 
+
+<br>
+
+### Join the Slack channels! 
+#### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
+
+<br>  
+
+##
+
+
 The only requirement to join this session is to have both R and RStudio installed on your computer or laptop (instructions below).  
 
 This first session is required for all beginner users to be able to follow along future sessions. Intermediate users are encouraged to use this as a general review and refresher, especially those who haven’t used R in a while or are new to RStudio.  
