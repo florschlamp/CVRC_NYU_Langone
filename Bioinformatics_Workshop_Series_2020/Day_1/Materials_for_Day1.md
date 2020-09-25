@@ -8,3 +8,7 @@ https://www.dropbox.com/sh/wsqkvon4dgf3v2x/AAAVuh9x2jXoidZbgOkmIJQfa?dl=0
 Files you should have now:  
 - Day1_code.R
 - mammals.csv
+
+New files added after the end of the workshop:
+- Day1_code_post-session.R
+- mammals_updated.csv
