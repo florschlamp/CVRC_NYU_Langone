@@ -9,7 +9,7 @@ Files you should have now:
 - Day1_code.R
 - mammals.csv
 
-New files added after the end of the workshop:
+<b>**</b> New files added after the end of the workshop:  <b>**</b>
 - Day1_code_post-session.R
 - mammals_updated.csv
 
