@@ -43,4 +43,7 @@ Friday Oct. 9th
 * 11am to noon  
 * 1:30pm until the start of the session at 2:30pm  
  
+Zoom link:
+https://nyulangone.zoom.us/j/98456141720
+
 
