@@ -24,11 +24,13 @@ Make sure you have the following packages installed in Rstudio: ggplot2 and edge
 # installing ggplot2: 
 install.packages("ggplot2")
 
+
 # installing edgeR:
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
 BiocManager::install("edgeR")
+
 
 # if the installations worked, you should be able to run the following lines without error messages:
 library(ggplot2)
