@@ -29,6 +29,10 @@ if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 
 BiocManager::install("edgeR")
+
+# if the installations worked, you should be able to run the following lines without error messages:
+library(ggplot2)
+library(edgeR)
 ```
 
 ### OFFICE HOURS:
