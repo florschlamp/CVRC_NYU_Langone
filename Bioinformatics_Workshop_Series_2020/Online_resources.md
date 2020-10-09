@@ -10,4 +10,12 @@ Another, more comprehensive resource, is the online book "R For Data Science".  
 
 https://r4ds.had.co.nz/
 
-As I think of more resources, I'll add them here!
+There is also an online book for ggplot2; this is a great resource to walk through how to build a ggplot, and how to change various parameters.  The possibilities for making plots using ggplot2 is truly remarkable!
+
+https://ggplot2-book.org/introduction.html
+
+Bioconductor includes many useful packages, some of which we will use in the seminar series.  There is a relatively easy way to browse available packages using the following link:
+
+https://www.bioconductor.org/packages/release/BiocViews.html#___Software
+
+You can then use the navigation bars on the left to browse by, say, "Biological Question" and then "GeneSetEnrichment" to find 127 available packages that include some element of gene set enrichment.  This can be overwhelming, but if you have a specific method you want to try, like GSEA, you can use this to start finding a tool that will allow you to run your analysis.  
