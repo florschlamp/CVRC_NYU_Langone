@@ -16,9 +16,6 @@
 
 #### Coming up:
 
-* Friday October 9th  
-Day 2: “Data Exploration, Part 1: Basic RNA-seq Data Manipulation”
-
 * Friday October 23rd  
 Day 3: “Data Exploration, Part 2: Basic RNA-seq Plots”
 
@@ -41,6 +38,13 @@ Day 1: “Introduction: First Steps on using R in Rstudio”
   * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_1/Materials_for_Day1.md)
   * [Watch Zoom video recording](https://www.youtube.com/watch?v=p7FM7NvMqfE)
 
+* Friday October 9th  
+Day 2: “Data Exploration, Part 1: Basic RNA-seq Data Manipulation”
+  * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_2/Materials_for_Day2.md)
+  * [Watch Zoom video recording](https://www.youtube.com/watch?v=kuCq67acX2s)
+
+  
+  
 ##  
 <br> 
 
