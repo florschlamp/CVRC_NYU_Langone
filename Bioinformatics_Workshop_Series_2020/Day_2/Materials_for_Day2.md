@@ -14,3 +14,5 @@ Files you should have now:
 - StartData.Rdata
 - Day2_all_intermediate_tables.Rdata
 - normalized_counts_after_log_and_filtering.csv
+
+To watch the recording of the workshop: https://www.youtube.com/watch?v=kuCq67acX2s
