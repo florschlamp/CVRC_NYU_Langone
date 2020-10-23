@@ -15,3 +15,24 @@ In this session we will focus on plotting the data that we cleaned up and normal
 
 
 <br>
+
+### REQUIREMENTS TO PARTICIPATE IN THIS SESSION:
+ 
+Make sure you have the following packages installed in Rstudio: ggplot2, pheatmap, RColorBrewer, and reshape2.  
+Example of how to install R packages:
+```r
+# installing ggplot2: 
+install.packages("ggplot2")
+
+# if the installation worked, you should be able to run the following line without error messages:
+library(ggplot2)
+```
+
+### OFFICE HOURS:
+ 
+Friday Oct. 23rd
+* 11am to noon  
+* 1:30pm until the start of the session at 2:30pm  
+ 
+Zoom link:
+https://nyulangone.zoom.us/j/98456141720
