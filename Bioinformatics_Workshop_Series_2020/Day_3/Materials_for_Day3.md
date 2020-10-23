@@ -8,3 +8,8 @@ Files you should have now:
 - Day3_code.R
 - StartData.Rdata
 - normalized_counts_after_log_and_filtering.csv
+
+<b> ** New files added after the end of the workshop:  </b>
+- Day3_code_post-session.R
+- Day3_code_post-session.html <-- this file includes all the plots as figures, open it on a browser
+
