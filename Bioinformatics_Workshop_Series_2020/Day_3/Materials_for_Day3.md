@@ -13,3 +13,4 @@ Files you should have now:
 - Day3_code_post-session.R
 - Day3_code_post-session.html <-- this file includes all the plots as figures, open it on a browser
 
+To watch the recording of the workshop: https://www.youtube.com/watch?v=xzb3KfTFh9E
