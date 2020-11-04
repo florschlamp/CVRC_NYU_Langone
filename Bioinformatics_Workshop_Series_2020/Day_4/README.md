@@ -11,7 +11,7 @@
 
 ##
 
-This session will focus on basic RNAseq analysis using the DESeq2 R package, using the same sample RNAseq dataset we used in the past two sessions (Data Exploration Parts 1 and 2). First we will show you how to do a quick data exploration, including plotting PCAs, with built in DESeq2 functions. Next, we will walk you through performing Differential Expression analysis, how to get a results table, and explore it using p-value and log Fold Change cutoffs. You will learn to extract the most significantly expressed genes and plot them based on their log Fold Change. You will also learn to extract the normalized counts from the DESeq2 package, and export them along with the DE results as files you can later access with Excel.
+This session will focus on basic RNAseq analysis using the DESeq2 R package, using the same sample RNAseq dataset we used in the past two sessions (Data Exploration [Part 1](https://github.com/florschlamp/CVRC_NYU_Langone/tree/master/Bioinformatics_Workshop_Series_2020/Day_2) and [Part 2](https://github.com/florschlamp/CVRC_NYU_Langone/tree/master/Bioinformatics_Workshop_Series_2020/Day_3)). First we will show you how to do a quick data exploration, including plotting PCAs, with built in DESeq2 functions. Next, we will walk you through performing Differential Expression analysis, how to get a results table, and explore it using p-value and log Fold Change cutoffs. You will learn to extract the most significantly expressed genes and plot them based on their log Fold Change. You will also learn to extract the normalized counts from the DESeq2 package, and export them along with the DE results as files you can later access with Excel.
 
 <br>
 
