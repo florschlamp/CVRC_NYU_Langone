@@ -14,4 +14,4 @@ Files you should have now:
 - DESeq_results.Rdata
 - full_results_dex_treated_vs_control.csv
 
-To watch the recording of the workshop: -- uploading --
+To watch the recording of the workshop: https://www.youtube.com/watch?v=HWrig1MKXNU
