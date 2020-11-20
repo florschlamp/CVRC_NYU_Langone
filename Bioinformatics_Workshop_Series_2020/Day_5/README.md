@@ -16,7 +16,7 @@ Now that you have normalized counts, log Fold Changes, and p-values for all gene
 
 ### REQUIREMENTS TO PARTICIPATE IN THIS SESSION:
  
-Make sure you have the following packages installed in Rstudio: ggplot2, ggrepel, plotly, pheatmap, RColorBrewer, and reshape2.  
+Make sure you have the following packages installed in Rstudio: ggplot2, ggrepel, plotly, pheatmap.  
 Example of how to install R packages:
 ```r
 ### Installing ggplot2: 
