@@ -8,3 +8,5 @@ Files you should have now:
 - Day5_code.R
 - StartData.Rdata
 - DESeq_results.Rdata
+
+To watch the recording of the workshop: https://www.youtube.com/watch?v=JLxS_OrDH1o
