@@ -12,6 +12,7 @@ Files you should have now:
 ** New files added after the end of the workshop:
 
 - Day5_code_post-session.R
+- Day5_code_post-session.html <-- this file includes all the plots as figures, open it on a browser
 - volcano_plot_genes_labeled_padj0.05.pdf
 - volcano_plot_genes_labeled_padj0.05.png
 - volcano_plot_interactive.html
