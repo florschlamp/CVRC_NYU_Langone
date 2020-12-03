@@ -16,9 +16,6 @@
 
 #### Coming up:
 
-* Friday November 20th  
-Day 5: “Data Analysis, Part 2: Publication-Ready RNAseq Plots”
-
 * Friday December 4th  
 Day 6: “Data Analysis, Part 3: Downstream Analyses”
 
@@ -39,7 +36,9 @@ Day 7: “Troubleshooting and Miscellaneous”
 * November 6th, 2020 - Day 4: “Data Analysis, Part 1: The basics of Differential Expression analysis with DESeq2”
    * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_4/Materials_for_Day4.md)
    * [Watch Zoom video recording](https://www.youtube.com/watch?v=HWrig1MKXNU)
-
+* November 20th, 2020 - Day 5: “Data Analysis, Part 2: Publication-Ready RNAseq Plots”
+   * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_5/Materials_for_Day5.md)
+   * [Watch Zoom video recording](https://www.youtube.com/watch?v=JLxS_OrDH1o)
   
 ##  
 <br> 
