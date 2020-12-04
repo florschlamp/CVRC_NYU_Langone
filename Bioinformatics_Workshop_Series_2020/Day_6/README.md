@@ -16,7 +16,7 @@ In this session we will focus on a few downstream analyses that will allow you t
 
 ### REQUIREMENTS TO PARTICIPATE IN THIS SESSION:
  
-Make sure you have the following packages installed in Rstudio: biomaRt, clusterProfiler, and org.Hs.eg.db (note they are both Bioconductor packages).  
+Make sure you have the following packages installed in Rstudio: biomaRt, clusterProfiler, and org.Hs.eg.db (note they are all Bioconductor packages).  
 
 Example of how to install Bioconductor R packages:
 ```r
