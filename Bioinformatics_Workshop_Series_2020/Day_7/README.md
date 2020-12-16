@@ -14,7 +14,9 @@
 In this final session for Fall 2020 we will go over some general troubleshooting for some common problems you might face when programming in R. We will also use this session to revisit any particular issues that people might have had in the past sessions.
 <br>
 
-
+  
+##    
+    
 ### OFFICE HOURS:
  
 Friday Dec. 18th
