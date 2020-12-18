@@ -8,3 +8,9 @@ Files you should have now:
 
 code_week7.R
 Week6_Results.Rdata
+
+** New files added after the end of the workshop:
+
+- code_week7_post-session.R
+
+To watch the recording of the workshop: https://www.youtube.com/watch?v=JP-KAFErJ_U
