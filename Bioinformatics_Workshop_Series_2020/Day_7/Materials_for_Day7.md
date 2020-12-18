@@ -6,8 +6,8 @@ https://www.dropbox.com/sh/itkfm576dvc5h9y/AACbS3BkIbm9tC1Jv9m1cPFga?dl=0
 
 Files you should have now:
 
-code_week7.R  
-Week6_Results.Rdata
+- code_week7.R  
+- Week6_Results.Rdata
 
 ** New files added after the end of the workshop:
 
