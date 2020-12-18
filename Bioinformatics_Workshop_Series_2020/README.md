@@ -11,14 +11,6 @@
 
 ##
 
-### Schedule
-
-
-#### Coming up:
-
-* Friday December 18th  
-Day 7: “Troubleshooting and Miscellaneous”
-
 #### Past workshops:
 
 * September 25th, 2020 - Day 1: “Introduction: First Steps on using R in Rstudio”
@@ -39,10 +31,12 @@ Day 7: “Troubleshooting and Miscellaneous”
 * November 20th, 2020 - Day 5: “Data Analysis, Part 2: Publication-Ready RNAseq Plots”
    * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_5/Materials_for_Day5.md)
    * [Watch Zoom video recording](https://www.youtube.com/watch?v=JLxS_OrDH1o)
-  
 * December 4th, 2020 - Day 6: “Data Analysis, Part 3: Downstream Analyses”
    * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_6/Materials_for_Day6.md)
    * [Watch Zoom video recording](https://www.youtube.com/watch?v=oS3-vUXziSc)
+* December 18th, 2020 - Day 7: “Troubleshooting and Miscellaneous”
+   * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_7/Materials_for_Day7.md)
+   * [Watch Zoom video recording](https://www.youtube.com/watch?v=JP-KAFErJ_U)
    
 ##  
 <br> 
