@@ -7,7 +7,7 @@
 
 
 #### Coming up:
-* Friday April 16th, 2021: "R programming basics: Data structures, objects, and classes. How to make sense of data storage and manipulation."
+* Friday April 16th, 2021: "R programming basics: Data structures, objects, and classes. How to make sense of data storage and manipulation."  
 Presenter: Michael Gildea, PhD  
 
   
