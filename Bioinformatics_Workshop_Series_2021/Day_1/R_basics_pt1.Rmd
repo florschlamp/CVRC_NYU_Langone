@@ -1,0 +1,339 @@
+---
+title: "R basics part 1"
+author: "Mike Gildea"
+date: "4/16/2021"
+output:
+  html_document:
+    code_folding: none
+    toc: yes
+    theme: spacelab
+  pdf_document: default
+---
+<style type="text/css">=
+  body{
+  font-size: 18pt;
+}
+</style>
+
+# Data Objects
+## Scalars
+
+Create a scalar object (x) with the numeric value of 1 and a scalar object (y) with the numeric value of 5
+```{r}
+x <- 1
+x
+y <- 5
+y
+```
+$$\\[.05in]$$
+
+We can check the type/mode of an object with typeof() or mode(). Note: R by default converts integers to doubles unless specified. You will likely never need to use integers but they can be specified using "L" after the integer (4L). 
+```{r}
+typeof(x)
+mode(x)
+```
+$$\\[.05in]$$
+
+
+class() returns the class of an object. For scalars and vectors this is the same as the mode/data type
+```{r}
+class(x)
+```
+$$\\[.05in]$$
+
+If we have a suspicion that a scalar is a specific mode we can check using the is() function.
+```{r}
+is.numeric(x)
+is.integer(x)
+```
+$$\\[.05in]$$
+
+We can do math on numeric variables using arithmetic operators
+```{r}
+x+y
+xy <- x/y
+xy
+log(x)
+sqrt(x+y)
+```
+$$\\[.05in]$$
+To create a character or string scalar enclose in " " or ' '. nchar() tells us how many characters are in the string.
+```{r}
+z <- "Hello world"
+z
+class(z)
+nchar(z)
+```
+$$\\[.05in]$$
+
+Notice how length() and nchar() are different. length() returns the length or number of elements in the object z, while nchar() specifically counts the number of characters in a single character string.
+```{r}
+length(z)
+```
+$$\\[.05in]$$
+class() actually returns a character scalar "character" which can be saved and manipulated like any other character scalar
+```{r}
+cl <- class(z)
+class(cl)
+```
+$$\\[.05in]$$
+
+Character strings can be manipulated in many ways! e.g. we can take slices of a string using substr()
+```{r}
+substr(z, 1,5)
+sub_z <- substr(z, nchar(z)-4, nchar(z))
+sub_z
+```
+$$\\[.05in]$$
+or we can check if a string contains a substring.
+```{r}
+grepl('world', z)
+```
+$$\\[.05in]$$
+To create a logical or boolean scalar we can explicitly save TRUE or FALSE or T or F to a variable
+```{r}
+logical_test <- TRUE
+logical_test
+class(logical_test)
+```
+$$\\[.05in]$$
+A logical can also be reversed using the ! operator
+```{r}
+lg <- TRUE
+lg
+lg <- !lg
+lg
+```
+$$\\[.05in]$$
+More likely, you will save a logical value that is returned from a binary operator or another function
+```{r}
+test <- z == sub_z
+test
+z == z
+z != z
+x > y
+y >= x
+```
+$$\\[.05in]$$
+Note that logical operators behave differently depending on what type is passed to them but will still give an answer!
+```{r}
+15 > 5
+"15" > "5"
+"15" > 5
+```
+$$\\[.05in]$$
+
+Modes can be coerced to one another by explicitly using the as() function. Sometimes R does this in the background! Always keep an eye on your modes.
+```{r}
+x <- 25.7
+is.character(x)
+x <- as.character(x)
+x
+is.character(x)
+x <- as.numeric(x)
+x
+is.character(x)
+```
+$$\\[.05in]$$
+R can't always coerce one mode to another
+```{r}
+z <- "Hello world"
+as.numeric(z)
+as.logical(z)
+z
+z <- "false"
+is.logical(z)
+z <- as.logical(z)
+z
+is.logical(z)
+```
+$$\\[.05in]$$
+For numeric variables, 0 will be converted to FALSE, and any other number will be converted to TRUE. For logicals TRUE converts to 1 and FALSE converts to 0.
+```{r}
+as.logical(0)
+as.logical(1)
+as.logical(-1)
+as.logical(1000000.234923847)
+as.numeric(TRUE)
+as.numeric(FALSE)
+```
+$$\\[.05in]$$
+R encodes missing values in 3 ways. NA (not available) is given when a value is missing. NaN (not a number) is produced by a numerical computation. NULL is an object without any value. 
+```{r}
+x <- NA
+x
+x <- 0/0
+x
+x <- NULL
+class(NULL)
+```
+
+## Vectors
+
+Scalars are just vectors of length 1! To create a vector we can use the combine/concatenate c() function.
+```{r}
+x <- c(0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+x
+```
+$$\\[.05in]$$
+
+Vectors, also called atomic vectors, must contain elements of only 1 mode. R will coerce all the variables to 1 mode if more than 1 mode is supplied.
+```{r}
+y <- c("genomics", "is", "fun", 5.6, 7.8)
+y
+```
+$$\\[.05in]$$
+
+All of the same functions that can be used on scalars can be used on vectors. e.g. we can check and coerce the mode
+```{r}
+class(x)
+is.numeric(x)
+x <- as.character(x)
+x
+x <- as.numeric(x)
+```
+$$\\[.05in]$$
+We can check the length 
+```{r}
+len <- length(x)
+len
+```
+$$\\[.05in]$$
+We can sort and reorder based on different criteria
+```{r}
+x <- sample(0:100, 10)
+x
+x <- sort(x)
+x
+rev(x)
+x <- c("call","banana", "digital","apple", "zebra", "sell")
+sort(x, decreasing = FALSE)
+sort(x, decreasing = TRUE)
+x <- 0:20
+x <- as.character(x)
+sort(x)
+```
+$$\\[.05in]$$
+We can do math functions on numeric vectors
+```{r}
+x <- 0:10
+y <- 10:20
+y
+x
+y - x
+y + 5
+```
+$$\\[.05in]$$
+Keep an eye on the length of the vectors being compared. If one vector is small the small vector will be repeated over the large one.
+```{r}
+y <- c(10:15)
+y
+x
+y - x
+```
+$$\\[.05in]$$
+We can perform logical tests.
+```{r}
+y <- c(10:20)
+y
+x
+y > x
+5 > x
+```
+$$\\[.05in]$$
+Indexing allows us to access values at specific positions
+```{r}
+x
+x[5]
+x[5:length(x)]
+```
+$$\\[.05in]$$
+We can couple logical tests with indexing to subset desired values. For example, we may want to find and save all the values that aren't 0. This is Rs bread and butter. 
+```{r}
+x <- c(0, 45, -10, 6, 0, 89, 0, -34, 39, 0)
+x
+x != 0
+x_non_zero <- x[x != 0]
+x_non_zero
+```
+$$\\[.05in]$$
+We can also find the index positions of a desired value using the which() function
+```{r}
+x <- c(0, 45, -10, 6, 0, 89, 0, -34, 39, 0)
+which(x == 0)
+x <- x[which(x == 0)]
+x
+```
+$$\\[.05in]$$
+We can also subset character vectors by desired values using the which() function. For example, we may want to find a specific gene in a vector of many genes
+```{r}
+genes <- c('ACT1','RPL28', 'ERV41','KIN28','NYV1','PRE3','RPL43A','RPS6A','SRB2','TAD3','RPS19A','TEF4')
+which(genes == "SRB2")
+genes[9]
+```
+$$\\[.05in]$$
+We can use the grep function to each string in the vector for a specific substring. For example, we can find all of the ribosomal protein genes in the vector and extract their positions.
+```{r}
+grep('RP', genes)
+grepl('RP', genes)
+RPGs <- grep('RP', genes)
+genes
+RPGs
+genes[RPGs]
+```
+$$\\[.05in]$$
+What if we want to find every gene that is not and RPG?
+```{r}
+nRPGs <- genes[!grepl('RP', genes)]
+nRPGs
+nRPGs <- genes[!(genes %in% genes[RPGs])]
+nRPGs
+```
+
+## Factors
+
+To make a factor you can use the factor() function or convert a vector to a factor using as.factor()
+```{r}
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype <- as.factor(genotype)
+is.factor(genotype)
+genotype
+levels(genotype)
+```
+$$\\[.05in]$$
+Factors behave differently than vectors and this can often be a source of frustration. The default behavior in r versions 3.6 or earlier is to automatically convert some character vectors to factors! This default was switched in r version 4. 
+```{r}
+genotype[1]
+genotype[1] <- "Mut"
+genotype[1] <- "Mut2"
+```
+
+Factors make it easy to run functions on subsets of data or "levels". For example tapply() will perform the specified function on each level of a factor
+```{r}
+gene_exp <- sample(0:100, 10)
+gene_exp
+tapply(gene_exp, genotype, mean)
+```
+$$\\[.05in]$$
+
+Factor levels have an order that can be important sometimes (alphabetical by default). The order can be changed using the relevel() function.
+```{r}
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype
+genotype <- factor(genotype, levels = c("WT", "Mut"))
+genotype
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype <- factor(genotype)
+genotype
+genotype <- relevel(genotype, "WT")
+genotype
+
+```
+$$\\[.05in]$$
+Factors can be converted to vectors via as.vector()
+```{r}
+genotype
+genotype <- as.vector(genotype)
+genotype
+```
+
