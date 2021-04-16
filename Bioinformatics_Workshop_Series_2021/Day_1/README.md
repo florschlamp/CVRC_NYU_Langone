@@ -6,7 +6,6 @@
 
 <br>  
 
-##
 
 This session is Part 1 of an introduction and practical guide to understanding the fundamentals of data storage and manipulation in R. This is meant to provide new(ish) users with a basic understanding of how R is structured by introducing data types/structures and the principle of objects and classes. This will give users the ability to make informed decisions on how to store, access, parse, and manipulate their data. Additionally, this will provide the knowledge necessary to quickly learn and utilize new packages and analyses in R.
 
@@ -19,6 +18,8 @@ If you haven’t already, make sure you go over the [Day 1 session](https://gith
 If you need to download R or R studio, please follow the instructions [here](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Download_Instructions.md)  
 
 <br>
+
+##
 
 ### Join the Slack channels! 
 #### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
