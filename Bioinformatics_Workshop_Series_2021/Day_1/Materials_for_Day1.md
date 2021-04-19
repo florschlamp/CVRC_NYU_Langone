@@ -8,3 +8,4 @@ Files you should have now:
 - R_basics_pt1.html
 - R_basics_pt1.Rmd
 
+To watch the recording of the workshop: https://www.youtube.com/watch?v=fvB1m41l1II
