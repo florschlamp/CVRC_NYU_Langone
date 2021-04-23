@@ -1,0 +1,291 @@
+---
+title: "R basics part 2"
+author: "Mike Gildea"
+date: "4/23/2021"
+output:
+  html_document:
+    code_folding: none
+    toc: yes
+    theme: spacelab
+  pdf_document: default
+---
+<style type="text/css">=
+  body{
+  font-size: 18pt;
+}
+</style>
+
+## Factors
+
+To make a factor you can use the factor() function or convert a vector to a factor using as.factor()
+```{r}
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype <- as.factor(genotype)
+is.factor(genotype)
+genotype
+levels(genotype)
+```
+$$\\[.05in]$$
+Factors behave differently than vectors and this can often be a source of frustration. The default behavior in r versions 3.6 or earlier is to automatically convert some character vectors to factors! This default was switched in r version 4. 
+```{r}
+genotype[1]
+genotype[1] <- "Mut"
+genotype[1] <- "Mut2"
+```
+
+Factors make it easy to run functions on subsets of data or "levels". For example tapply() will perform the specified function on each level of a factor
+```{r}
+gene_exp <- sample(0:100, 10)
+gene_exp
+tapply(gene_exp, genotype, mean)
+```
+$$\\[.05in]$$
+
+Factor levels have an order that can be important sometimes (alphabetical by default). The order can be changed using the relevel() function.
+```{r}
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype
+genotype <- factor(genotype, levels = c("WT", "Mut"))
+genotype
+genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+genotype <- factor(genotype)
+genotype
+genotype <- relevel(genotype, "WT")
+genotype
+
+```
+$$\\[.05in]$$
+Factors can be converted to vectors via as.vector()
+```{r}
+genotype
+genotype <- as.vector(genotype)
+genotype
+```
+$$\\[.05in]$$
+
+
+## Matrix
+
+The matrix() function can be used to make a matrix.
+```{r}
+counts <- matrix(data = sample(0:100, 100), nrow = 10, ncol = 10)
+counts
+```
+
+$$\\[.05in]$$
+A vector can be converted into a matrix by adding a dim attribute with the dim() function
+```{r}
+x <- sample(0:100, 120, replace = T)
+x
+dim(x) <- c(12,10)
+x
+```
+
+$$\\[.05in]$$
+A matrix can be indexed using counts[row,column]
+```{r}
+counts[2,5]
+counts[2,]
+counts[,5]
+```
+$$\\[.05in]$$
+
+We can change any value in a matrix just as we can in a vector. For example, we can change every value that is < 50 to a NA or we can change a specific cell or row or column or a portion of a column or row.
+```{r}
+counts[counts < 50] <- NA
+counts
+counts[1,] <- 1000
+counts
+counts[,5] <- -50
+counts
+counts[7:10, 10] <- 0
+counts
+```
+$$\\[.05in]$$
+We can name the rows and columns of a matrix by suppling the colnames() and rownames() functions with character vectors.
+
+```{r}
+genes <- c('ACT1','RPL28', 'ERV41','KIN28','NYV1','PRE3','RPL43A','RPS6A','SRB2','TAD3','RPS19A','TEF4')
+counts <- matrix(data = sample(0:1000, 120, replace = T), nrow = 12, ncol = 10)
+colnames(counts) <- paste("sample", 1:10, sep = "_")
+rownames(counts) <- genes
+counts
+counts[,"sample_1"]
+counts["ACT1",]
+```
+$$\\[.05in]$$
+
+## Data frames
+
+we can create a data frame from a collection of vectors
+```{r}
+Genotype <- c("WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "Mut", "WT", "WT")
+Sample <- paste("Sample",1:10, sep = "_")
+Fastq <- paste("Sample",1:10,"fastq.gz", sep = ".")
+Replicate <- c(1, 1, 2, 2, 3, 1, 1, 2, 2, 3)
+Batch <- c(rep("04/01/2021", 5), rep("3/25/2021", 5))
+meta_data <- data.frame(Genotype = Genotype, Sample = Sample, Fastq = Fastq, Replicate = Replicate, Batch = Batch)
+meta_data
+class(meta_data)
+```
+$$\\[.05in]$$
+The summary() and str() functions provided summary info for each column in the data frame. head() is also a quick way to check out whats in a data frame. colnames() and rownames() can also be used to change or access identifying info.
+````{r}
+summary(meta_data)
+str(meta_data)
+head(meta_data)
+colnames(meta_data)
+colnames(meta_data)[3] <- "Fastq file name"
+head(meta_data)
+```
+$$\\[.05in]$$
+We can access each vector or column in a data frame by its name using "$" or by using the same indexing as a matrix[row,column]. We can also access a column using just [column]
+```{r}
+meta_data$Fastq
+meta_data$Fastq[5]
+meta_data[,2]
+meta_data[2,]
+meta_data[2]
+```
+$$\\[.05in]$$
+Additional info can easily be added to the data frame using the $ operator or the cbind() and rbind() functions. Warning: cbind() and rbind() wont require a vector of the same length and will repeat or truncate what is being added. NULL can be used to delete columns
+```{r}
+Sex <- as.factor(c("F", "M", "F", "M", "M", "F", "F", "F", "M", "M"))
+meta_data$Sex <- Sex
+meta_data
+meta_data$Sex <- NULL
+meta_data <- cbind(meta_data, Sex)
+meta_data
+```
+$$\\[.05in]$$
+We can sort the whole data frame by a single column using the order() function
+```{r}
+meta_data
+meta_data <- meta_data[order(meta_data$Genotype, decreasing = T),]
+meta_data
+```
+$$\\[.05in]$$
+
+We can subset a whole data frame by indexing by the desired rows and columns
+```{r}
+meta_data_WT <- meta_data[1:6,]
+meta_data_WT
+```
+$$\\[.05in]$$
+We can also use logical tests to identify the data we want to subset the data frame by
+```{r}
+meta_data_WT <- meta_data[meta_data$Genotype == "WT",]
+meta_data_WT
+meta_data_WT <- meta_data[meta_data$Genotype == "WT" & meta_data$Sex == "F",]
+meta_data_WT
+
+meta_data_filtered <- meta_data[!meta_data$Sample == "Sample_1",]
+meta_data_filtered
+```
+$$\\[.05in]$$
+Data frames can be coerced to matrices and vice versa. Remember matrices can only be of 1 data type (since they are essentially a vector) so R will autmatically try to convert data types.
+```{r}
+as.matrix(meta_data)
+as.data.frame(counts)
+```
+$$\\[.05in]$$
+
+## Lists
+
+A list can be made with the list() function and each object can be accessed with list[[index]].
+```{r}
+RNAseq <- list(meta_data, counts)
+class(RNAseq)
+summary(RNAseq)
+str(RNAseq)
+RNAseq[[1]]
+RNAseq[[2]]
+RNAseq[[1]]$Genotype
+RNAseq[[1]][1]
+```
+$$\\[.05in]$$
+
+We can give names to the objects within the list
+```{r}
+RNAseq <- list("meta data" = meta_data, "counts" = counts)
+RNAseq[["counts"]]
+RNAseq$`counts`
+```
+$$\\[.05in]$$
+Objects can be added or removed from a list
+```{r}
+Log_counts <- log2(counts)
+RNAseq[["log counts"]] <- Log_counts
+str(RNAseq)
+RNAseq[[3]]
+RNAseq[["log counts"]] <- NULL
+str(RNAseq)
+```
+$$\\[.05in]$$
+
+# Function objects
+
+## Generic functions
+
+You can ID a generic function by the UseMethod() function call
+```{r}
+summary
+lm
+```
+
+$$\\[.05in]$$
+
+The methods() function can be used to view all methods associated with a generic function
+```{r}
+methods("summary")
+methods("plot")
+```
+$$\\[.05in]$$
+The methods() function can also be used to view the generic methods associated with a specific class
+```{r}
+methods(class = "data.frame")
+```
+
+# Parsing complex data objects
+
+Functions normally return a new data object that can be captured with the assignment operator 
+```{r}
+x <- rnorm(n = 10, mean = 10, sd = 5)
+y <- rnorm(n = 10, mean = 20, sd = 5)
+ttest <- t.test(x,y)
+class(ttest)
+typeof(ttest)
+str(ttest)
+summary(ttest)
+ttest$p.value
+names(ttest)
+ttest[["p.value"]]
+```
+$$\\[.05in]$$
+Here's a more complex data object returned by the lm() function
+```{r}
+x <- 1:10
+y <- rnorm(n = 10, mean = 20, sd = 5)
+l <- lm(x ~ y)
+l
+class(l)
+names(l)
+str(l)
+l$qr
+l$qr$qr
+class(l$qr$qr)
+l$qr$qr[,2]
+```
+$$\\[.05in]$$
+We can use plot() to produce several QC plots for a linear model. ?plot.lm will describe the plot method for the "lm" class. We can recreate the plots on our own from the data stored in the lm object
+```{r}
+plot(l, which = 1)
+?plot.lm
+str(l)
+plot(l$fitted.values, l$residuals)
+```
+
+
+
+
+
