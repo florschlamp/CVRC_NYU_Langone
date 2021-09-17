@@ -4,7 +4,7 @@
 
 
 #### Past lectures:
-* September 17th, 2021: CVRC New Technologies Seminar Series: "Discovering Functional Enhancers with Nascent RNA Profiling"  
+* September 17th, 2021: [CVRC New Technologies Seminar Series] "Discovering Functional Enhancers with Nascent RNA Profiling"  
 Speaker: Erin Wissink, PhD
    * [see slides]()
    * [watch Zoom video recording]()  
