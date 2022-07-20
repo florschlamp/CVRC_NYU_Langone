@@ -27,7 +27,3 @@ Pre-requisites: If you haven’t already, make sure you go over the [Day 1 sessi
 
 <br>
 
-### Join the Slack channels! 
-#### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
-
-<br>
