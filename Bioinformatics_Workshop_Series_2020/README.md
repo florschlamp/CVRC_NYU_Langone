@@ -2,11 +2,6 @@
 
 ## Basic Programming and Bioinformatics Analyses using R in Rstudio
 
-<br>
-
-### Join the Slack channels! 
-#### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
-
 <br>  
 
 ##
