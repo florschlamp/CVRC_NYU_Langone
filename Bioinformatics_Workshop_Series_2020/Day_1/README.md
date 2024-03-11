@@ -1,13 +1,12 @@
 # Day 1 - Introduction: First Steps on using R in Rstudio
 ## Friday, September 25th, 2020
+## Presenter: Florencia Schlamp, PhD  
 
+   * [Download code and materials](https://github.com/florschlamp/CVRC_NYU_Langone/blob/master/Bioinformatics_Workshop_Series_2020/Day_1/Materials_for_Day1.md)
+   * [Watch Zoom video recording](https://www.youtube.com/watch?v=p7FM7NvMqfE)
 
-<br>
+     
 
-### Join the Slack channels! 
-#### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
-
-<br>  
 
 ##
 
@@ -33,4 +32,11 @@ If you have any issues with the download, you can stop by my virtual office hour
  
 Friday Sep. 25th
 * 11am to noon  
-* 1:30pm until the start of the session at 2:30pm  
+* 1:30pm until the start of the session at 2:30pm
+
+<br>
+
+### Join the Slack channels! 
+#### https://join.slack.com/t/cvrcbioinform-zmq7258/shared_invite/zt-hja1edwl-RPS1PxgXixBjfUStcW_JTg
+
+<br>  
