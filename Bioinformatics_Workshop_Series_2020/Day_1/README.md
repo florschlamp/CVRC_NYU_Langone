@@ -34,9 +34,3 @@ If you have any issues with the download, you can stop by my virtual office hour
 Friday Sep. 25th
 * 11am to noon  
 * 1:30pm until the start of the session at 2:30pm  
- 
-Join Zoom Meeting  
-https://us02web.zoom.us/j/82555815703?pwd=YjZZMkhiTFhWUlJsQ1krYXZCeTgyUT09  
- 
-Meeting ID: 825 5581 5703  
-Passcode: 4f998Z  
