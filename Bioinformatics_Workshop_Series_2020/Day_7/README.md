@@ -22,6 +22,3 @@ In this final session for Fall 2020 we will go over some general troubleshooting
 Friday Dec. 18th
 * 11am to noon  
 * 1:30pm until the start of the session at 2:30pm  
- 
-Zoom link:
-https://nyulangone.zoom.us/j/98456141720
